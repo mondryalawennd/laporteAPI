@@ -1,0 +1,7 @@
+# Ignorar arquivos do Visual Studio
+.vs/
+# Ignorar binários do Visual Studio
+bin/
+obj/
+# Ignorar arquivos de configuração do Visual Studio
+.vsconfig

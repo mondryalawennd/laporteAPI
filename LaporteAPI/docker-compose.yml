@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laporteAPI
+    ports:
+      - "8080:80"
+    depends_on:
+      - sqlserver
+    environment:
+      - ConnectionStrings__LaporteBD=Server=sqlserver,1433;Database=LaporteDB;User Id=sa;Password=MinhaSenha@123;TrustServerCertificate=true;
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: laporteSQL
+    environment:
+      SA_PASSWORD: "MinhaSenha@123"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+volumes:
+  sqlserver_data:
