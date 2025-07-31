@@ -80,9 +80,9 @@ namespace LaporteAPI.Persistente.Service
             await _funcionarioRepository.Update(Funcionario);
         }
 
-        public async Task Delete(Funcionario Funcionario)
+        public async Task Delete(int id)
         {
-            await _funcionarioRepository.Delete(Funcionario);
+            await _funcionarioRepository.Delete(id);
         }
 
         

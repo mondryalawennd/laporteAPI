@@ -7,6 +7,7 @@ namespace LaporteAPI.Domain.Model
 {
     public class FuncionarioDTO
     {
+        public int Id { get; set; }
         [Required]
         public string Nome { get; set; }
 

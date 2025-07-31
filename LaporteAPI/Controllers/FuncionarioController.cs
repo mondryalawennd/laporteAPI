@@ -13,7 +13,7 @@ using System.Security.Claims;
 namespace LaporteAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class FuncionarioController: ControllerBase
+    public class FuncionarioController: ControllerBase 
     {
         public readonly IFuncionarioService _funcionarioService;
         public readonly IFuncionarioTelefoneService _funcionarioTelefoneService;
@@ -24,6 +24,17 @@ namespace LaporteAPI.Controllers
             this._logger = logger;
             this._funcionarioService = funcionarioService;
             this._funcionarioTelefoneService = funcionarioTelefoneService;
+        }
+
+        [HttpGet("GetFuncionarioPorId/{id}")]
+        public async Task<IActionResult> GetFuncionarioPorId( int Id)
+        {
+            var funcionario = await _funcionarioService.GetEntityById(Id);
+
+            if (funcionario == null)
+                return NotFound();
+
+            return Ok(funcionario);
         }
 
 
@@ -92,6 +103,53 @@ namespace LaporteAPI.Controllers
                 return BadRequest(new { erro = ex.Message });
             }
         }
+
+        [HttpDelete("DeleteFuncionario/{id}")]
+        public async Task<IActionResult> DeleteFuncionario(int id)
+        {
+             await _funcionarioService.Delete(id);
+
+            return NoContent();  
+        }
+
+        [HttpPut("atualizarFuncionario/{id}")]
+        public async Task<IActionResult> AtualizarFuncionario(int id, [FromBody] FuncionarioDTO funcionarioDTO)
+        {
+            // Verifica se o ID passado no corpo da requisição corresponde ao ID da URL
+            if (id != funcionarioDTO.Id)
+            {
+                return BadRequest("O ID do funcionário não corresponde.");
+            }
+
+            var funcionario = await _funcionarioService.GetEntityById(id);
+            if (funcionario == null)
+            {
+                return NotFound("Funcionário não encontrado.");
+            }
+
+          
+            funcionario.Nome = funcionarioDTO.Nome;
+            funcionario.Sobrenome = funcionarioDTO.Sobrenome;
+            funcionario.CPF = funcionarioDTO.CPF;
+            funcionario.DataNascimento = funcionarioDTO.DataNascimento;
+            funcionario.Email = funcionarioDTO.Email;
+            funcionario.NomeGerente = funcionarioDTO.NomeGerente;
+            //funcionario.CargoId = funcionarioDTO.CargoId;
+            funcionario.Senha = funcionarioDTO.Senha;
+
+            try
+            {
+                // Chama o serviço para atualizar o funcionário no banco de dados
+                await _funcionarioService.Update(funcionario);
+
+                return Ok(funcionario);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao atualizar o funcionário: {ex.Message}");
+            }
+        }
+
 
     }
 }

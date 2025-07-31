@@ -8,7 +8,7 @@ namespace LaporteAPI.Persistente.Service.Interface
         Task<Funcionario> GetEntityById(int id);
         Task<IEnumerable<Funcionario>> GetAll();
         Task Update(Funcionario Funcionario);
-        Task Delete(Funcionario Funcionario);
+        Task Delete(int id);
         Task<(bool Sucesso, string Mensagem, int FuncionarioId)> CadastrarFuncionario(Funcionario novoFuncionario, Funcionario usuarioCriador);
     }
 }

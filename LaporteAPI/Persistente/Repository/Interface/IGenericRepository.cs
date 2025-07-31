@@ -8,7 +8,7 @@ namespace LaporteAPI.Persistente.Repository.Interface
         Task<T> GetEntityById(int id);
         Task<IEnumerable<T>> List();
         Task Update(T entity);
-        Task Delete(T entity);
+        Task Delete(int id);
         Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities);
         Task<T?> BuscarPorCampo(Expression<Func<T, bool>> predicate);
     }

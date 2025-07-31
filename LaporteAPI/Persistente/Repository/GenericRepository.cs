@@ -49,8 +49,14 @@ namespace LaporteAPI.Persistente.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(T entity)
+        public async Task Delete(int id)
         {
+            var entity = await _dbSet.FindAsync(id);
+            if (entity == null)
+            {
+                throw new Exception("Entidade não encontrada.");
+            }
+
             _dbSet.Remove(entity);
             await _context.SaveChangesAsync();
         }

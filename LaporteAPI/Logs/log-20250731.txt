@@ -1,0 +1,761 @@
+2025-07-31 15:10:29.372 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 15:10:31.439 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 15:10:31.833 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 15:10:31.865 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 15:10:31.884 -03:00 [INF] Hosting environment: Development
+2025-07-31 15:10:31.889 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 15:10:35.185 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 15:10:40.953 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 5812.1841ms
+2025-07-31 15:10:41.069 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 15:10:41.070 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 15:10:41.263 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 193.0913ms
+2025-07-31 15:10:41.951 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 881.4801ms
+2025-07-31 15:10:42.216 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 15:10:43.477 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1261.3919ms
+2025-07-31 15:14:11.412 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:14:11.506 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:14:11.781 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:14:11.952 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:14:50.343 -03:00 [INF] Executed DbCommand (365ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:14:51.433 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:14:52.456 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 40439.9367ms
+2025-07-31 15:14:52.593 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:14:52.632 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 41215.7259ms
+2025-07-31 15:23:39.540 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:23:39.665 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:23:39.892 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:23:39.939 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:23:45.267 -03:00 [INF] Executed DbCommand (225ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:23:45.323 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:23:45.338 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 5349.7904ms
+2025-07-31 15:23:45.456 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:23:45.486 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 5955.2985ms
+2025-07-31 15:34:07.891 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 15:34:09.692 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 15:34:09.703 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 15:34:09.716 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 15:34:09.722 -03:00 [INF] Hosting environment: Development
+2025-07-31 15:34:09.728 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 15:34:14.567 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 15:34:23.166 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 8694.082ms
+2025-07-31 15:34:23.431 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 15:34:23.510 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 15:34:32.736 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 9305.6915ms
+2025-07-31 15:34:35.456 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12022.4384ms
+2025-07-31 15:34:36.537 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 15:34:37.868 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1330.3341ms
+2025-07-31 15:35:31.315 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 15:35:32.782 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 15:35:33.550 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 15:35:35.702 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 15:35:36.174 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 15:35:36.518 -03:00 [INF] Hosting environment: Development
+2025-07-31 15:35:36.797 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 15:35:40.109 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 4001.6736ms
+2025-07-31 15:35:40.380 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 15:35:40.388 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 15:35:41.321 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 946.0636ms
+2025-07-31 15:35:41.767 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1378.7609ms
+2025-07-31 15:35:42.114 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 15:35:43.109 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 994.9656ms
+2025-07-31 15:36:03.245 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId?Id=1 - null null
+2025-07-31 15:36:03.444 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:36:03.680 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:36:28.757 -03:00 [INF] Executed DbCommand (392ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 15:37:21.904 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 15:37:21.966 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 78246.1237ms
+2025-07-31 15:37:22.193 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:37:22.308 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId?Id=1 - 200 null application/json; charset=utf-8 79062.5799ms
+2025-07-31 15:40:24.176 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:40:24.514 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:40:24.561 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:40:24.687 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:40:26.121 -03:00 [INF] Executed DbCommand (419ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:40:26.167 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:40:26.215 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 1437.9827ms
+2025-07-31 15:40:26.257 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:40:26.264 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 2095.3519ms
+2025-07-31 15:45:11.324 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:45:11.679 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:45:11.769 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:45:11.925 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:45:12.348 -03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:45:12.383 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:45:12.399 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 444.6237ms
+2025-07-31 15:45:12.411 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:45:12.419 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1147.2923ms
+2025-07-31 15:46:44.756 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:46:46.141 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:46:46.343 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:46:46.409 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:46:46.664 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:46:46.677 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:46:46.684 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 41.6582ms
+2025-07-31 15:46:46.786 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:46:46.873 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 2118.91ms
+2025-07-31 15:46:49.404 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/3 - null null
+2025-07-31 15:46:51.814 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:46:52.737 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/3 - 404 0 null 3333.3019ms
+2025-07-31 15:46:54.030 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7084/api/Funcionario/3, Response status code: 404
+2025-07-31 15:51:16.015 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:51:16.130 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:51:16.146 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:51:16.188 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:51:16.276 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:51:16.718 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:51:16.727 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 518.0696ms
+2025-07-31 15:51:16.733 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:51:16.739 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 726.9488ms
+2025-07-31 15:51:19.862 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 15:51:20.649 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:51:20.691 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 404 0 null 830.1336ms
+2025-07-31 15:51:20.713 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3, Response status code: 404
+2025-07-31 15:51:42.317 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/ - null null
+2025-07-31 15:51:45.138 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:51:45.144 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:51:57.623 -03:00 [INF] Executed DbCommand (99ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 15:51:58.358 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2025-07-31 15:51:58.649 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 13486.9918ms
+2025-07-31 15:51:58.658 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:51:58.665 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/ - 404 0 null 16348.4888ms
+2025-07-31 15:53:59.045 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 15:54:04.299 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 15:54:10.919 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 15:54:11.123 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 15:54:11.217 -03:00 [INF] Hosting environment: Development
+2025-07-31 15:54:11.221 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 15:54:11.460 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:54:11.460 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 15:54:12.409 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:54:12.710 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:54:12.860 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:54:13.666 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 2241.4978ms
+2025-07-31 15:54:13.749 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 15:54:13.942 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 15:54:14.246 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 304.1193ms
+2025-07-31 15:54:14.675 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 927.1735ms
+2025-07-31 15:54:15.409 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 15:54:16.227 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 818.4411ms
+2025-07-31 15:54:25.801 -03:00 [INF] Executed DbCommand (435ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:54:27.201 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:54:27.428 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 14427.2684ms
+2025-07-31 15:54:27.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:54:27.485 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:54:27.496 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:54:27.510 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:54:27.517 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:54:27.528 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 16110.0756ms
+2025-07-31 15:54:28.645 -03:00 [INF] Executed DbCommand (642ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:54:28.833 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:54:28.876 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 1348.3582ms
+2025-07-31 15:54:28.900 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:54:28.916 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1449.6351ms
+2025-07-31 15:54:32.013 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 15:54:32.288 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:54:32.296 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:54:32.350 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:54:40.224 -03:00 [INF] Executed DbCommand (278ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 15:54:41.604 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 15:54:41.774 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 9403.2498ms
+2025-07-31 15:54:41.819 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:54:41.829 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 9815.9405ms
+2025-07-31 15:55:28.521 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 15:55:30.973 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:55:34.369 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:55:37.685 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:55:37.696 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:55:37.700 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:55:37.707 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:55:37.713 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:55:37.938 -03:00 [INF] Executed DbCommand (195ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:55:39.416 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:55:39.450 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 1712.938ms
+2025-07-31 15:55:39.462 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:55:39.495 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 8794.4854ms
+2025-07-31 15:55:40.093 -03:00 [INF] Executed DbCommand (655ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 15:55:41.379 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 15:55:41.387 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 3660.8914ms
+2025-07-31 15:55:41.393 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:55:41.398 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 12882.0018ms
+2025-07-31 15:57:33.781 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 15:57:33.904 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:57:33.908 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:57:33.922 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:57:34.121 -03:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 15:57:34.483 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 15:57:34.499 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 562.1276ms
+2025-07-31 15:57:34.508 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 15:57:34.515 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 745.3823ms
+2025-07-31 15:57:36.101 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 15:57:36.317 -03:00 [INF] CORS policy execution successful.
+2025-07-31 15:57:36.353 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:57:36.480 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 15:57:36.555 -03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 15:57:36.760 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 15:57:36.770 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 277.2275ms
+2025-07-31 15:57:36.780 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 15:57:36.790 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 687.0849ms
+2025-07-31 16:03:07.759 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:03:08.264 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:03:08.274 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:03:08.293 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:03:08.580 -03:00 [INF] Executed DbCommand (136ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:03:08.877 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:03:08.885 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 577.8902ms
+2025-07-31 16:03:08.894 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:03:08.899 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1146.7287ms
+2025-07-31 16:03:09.182 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:03:09.628 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:03:09.633 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:03:09.650 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:03:09.694 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:03:10.556 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:03:10.786 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 1124.1682ms
+2025-07-31 16:03:10.793 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:03:10.799 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1635.4995ms
+2025-07-31 16:03:12.482 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:03:12.989 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:03:13.002 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:03:13.067 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:03:13.955 -03:00 [INF] Executed DbCommand (107ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:03:14.010 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:03:14.017 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 200.4732ms
+2025-07-31 16:03:14.027 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:03:14.032 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1550.1969ms
+2025-07-31 16:14:54.198 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 16:14:56.019 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 16:14:56.198 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 16:14:57.105 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 16:14:57.254 -03:00 [INF] Hosting environment: Development
+2025-07-31 16:14:57.480 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 16:14:59.533 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 16:15:08.763 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 9527.5765ms
+2025-07-31 16:15:11.385 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 16:15:11.556 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 169.3035ms
+2025-07-31 16:15:14.958 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 16:15:15.267 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 309.2497ms
+2025-07-31 16:15:20.076 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 16:15:21.731 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1684.0867ms
+2025-07-31 16:16:08.914 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:16:08.989 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:16:09.147 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:16:09.393 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:16:31.034 -03:00 [INF] Executed DbCommand (269ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:16:31.533 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:16:31.682 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 22005.0103ms
+2025-07-31 16:16:31.735 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:16:31.788 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 22874.3329ms
+2025-07-31 16:16:33.824 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:16:34.159 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:16:34.172 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:16:34.341 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:16:35.523 -03:00 [INF] Executed DbCommand (203ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:16:35.621 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:16:35.633 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 1276.4863ms
+2025-07-31 16:16:35.669 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:16:35.699 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1875.1516ms
+2025-07-31 16:17:55.904 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:17:55.958 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:17:55.969 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:17:55.975 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:17:56.170 -03:00 [INF] Executed DbCommand (63ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:17:56.189 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:17:56.197 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 209.9267ms
+2025-07-31 16:17:56.207 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:17:56.214 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 315.9292ms
+2025-07-31 16:18:28.505 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:18:28.844 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:18:28.850 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:18:28.855 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:18:29.210 -03:00 [INF] Executed DbCommand (332ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:18:29.662 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:18:29.672 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 801.9284ms
+2025-07-31 16:18:29.684 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:18:29.690 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1191.9631ms
+2025-07-31 16:20:11.733 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:20:11.969 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:20:12.005 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:20:12.034 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:20:12.206 -03:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:20:12.262 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:20:12.333 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 269.0824ms
+2025-07-31 16:20:12.413 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:20:12.642 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 911.0104ms
+2025-07-31 16:20:14.385 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:20:14.781 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:20:14.806 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:20:14.813 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:20:15.240 -03:00 [INF] Executed DbCommand (104ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:20:15.261 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:20:15.273 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 151.1469ms
+2025-07-31 16:20:15.280 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:20:15.287 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 902.6014ms
+2025-07-31 16:20:19.187 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - null null
+2025-07-31 16:20:19.203 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:20:19.219 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - 204 null null 32.7819ms
+2025-07-31 16:20:19.232 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - application/json 260
+2025-07-31 16:20:19.252 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:20:19.262 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:20:19.296 -03:00 [INF] Route matched with {action = "CadastrarFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadastrarFuncionario(LaporteAPI.Domain.Model.FuncionarioDTO) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:20:19.577 -03:00 [INF] Requisição para obter todos os funcionários iniciada.
+2025-07-31 16:20:20.495 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-31 16:20:20.584 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI) in 1257.8202ms
+2025-07-31 16:20:21.055 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:20:21.120 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - 400 null application/json; charset=utf-8 1887.8905ms
+2025-07-31 16:24:10.479 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:24:10.826 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:24:10.837 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:24:10.845 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:24:11.139 -03:00 [INF] Executed DbCommand (170ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:24:11.176 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:24:11.187 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 323.7328ms
+2025-07-31 16:24:11.195 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:24:11.202 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 728.4471ms
+2025-07-31 16:26:14.882 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:26:15.052 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:26:15.064 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:26:15.078 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:26:15.219 -03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:26:15.331 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:26:15.344 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 235.2414ms
+2025-07-31 16:26:15.352 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:26:15.358 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 484.2563ms
+2025-07-31 16:26:16.658 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:26:16.928 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:26:16.934 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:26:16.938 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:26:17.001 -03:00 [INF] Executed DbCommand (44ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:26:17.022 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:26:17.036 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 88.125ms
+2025-07-31 16:26:17.053 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:26:17.065 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 408.2834ms
+2025-07-31 16:26:19.669 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - null null
+2025-07-31 16:26:19.703 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:26:19.711 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - 204 null null 42.0302ms
+2025-07-31 16:26:19.719 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - application/json 260
+2025-07-31 16:26:19.903 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:26:19.907 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:26:19.915 -03:00 [INF] Route matched with {action = "CadastrarFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadastrarFuncionario(LaporteAPI.Domain.Model.FuncionarioDTO) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:26:19.961 -03:00 [INF] Requisição para obter todos os funcionários iniciada.
+2025-07-31 16:26:20.568 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-31 16:26:20.941 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI) in 1010.7162ms
+2025-07-31 16:26:21.285 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:26:21.378 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - 400 null application/json; charset=utf-8 1657.656ms
+2025-07-31 16:29:05.205 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:29:06.859 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:29:07.025 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:29:07.025 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:29:07.082 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:29:07.082 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:29:07.093 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:29:07.098 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:29:07.542 -03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:29:07.714 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:29:07.727 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 342.5968ms
+2025-07-31 16:29:07.793 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:29:07.935 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1077.2313ms
+2025-07-31 16:29:08.313 -03:00 [INF] Executed DbCommand (116ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:29:08.385 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:29:08.396 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 869.5197ms
+2025-07-31 16:29:08.410 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:29:08.415 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 3221.0572ms
+2025-07-31 16:29:09.551 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:29:09.643 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:29:09.650 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:29:09.659 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:29:09.849 -03:00 [INF] Executed DbCommand (144ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:29:09.881 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:29:09.889 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 218.6859ms
+2025-07-31 16:29:09.898 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:29:09.907 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 356.175ms
+2025-07-31 16:29:13.811 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - null null
+2025-07-31 16:29:14.291 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:29:14.302 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - 204 null null 490.7324ms
+2025-07-31 16:29:14.335 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - application/json 260
+2025-07-31 16:29:14.366 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:29:14.369 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:29:14.375 -03:00 [INF] Route matched with {action = "CadastrarFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadastrarFuncionario(LaporteAPI.Domain.Model.FuncionarioDTO) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:29:14.395 -03:00 [INF] Requisição para obter todos os funcionários iniciada.
+2025-07-31 16:29:15.075 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-31 16:29:15.144 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI) in 757.4099ms
+2025-07-31 16:29:15.154 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:29:15.162 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - 400 null application/json; charset=utf-8 826.7407ms
+2025-07-31 16:31:07.159 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:31:07.349 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:31:07.792 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:31:07.931 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:31:07.936 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:31:07.939 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:31:07.946 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:31:07.952 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:31:07.988 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:31:08.002 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:31:08.015 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:31:08.021 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:31:08.028 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 63.385ms
+2025-07-31 16:31:08.034 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 59.9101ms
+2025-07-31 16:31:08.041 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:31:08.047 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:31:08.054 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 971.9248ms
+2025-07-31 16:31:08.059 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 710.4684ms
+2025-07-31 16:31:09.998 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:31:10.352 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:31:10.368 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:31:10.376 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:31:10.543 -03:00 [INF] Executed DbCommand (140ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:31:10.801 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:31:10.809 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 414.2677ms
+2025-07-31 16:31:10.816 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:31:10.822 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 823.6614ms
+2025-07-31 16:33:11.527 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:33:12.625 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:33:13.740 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:33:13.964 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:33:13.968 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:33:13.971 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:33:13.976 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:33:13.983 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:33:14.180 -03:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:33:14.537 -03:00 [INF] Executed DbCommand (304ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:33:14.931 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:33:14.941 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:33:14.947 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 948.9631ms
+2025-07-31 16:33:14.958 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 728.1458ms
+2025-07-31 16:33:14.964 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:33:15.211 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:33:15.229 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 3701.5086ms
+2025-07-31 16:33:15.238 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 2613.4672ms
+2025-07-31 16:33:19.514 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:33:19.875 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:33:19.910 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:33:19.972 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:33:20.124 -03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:33:20.352 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:33:20.360 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 284.681ms
+2025-07-31 16:33:20.368 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:33:20.374 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 860.4451ms
+2025-07-31 16:37:10.120 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:37:14.249 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:37:14.872 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:37:14.941 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:37:15.355 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:37:15.362 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:37:15.364 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:37:15.421 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:37:15.864 -03:00 [INF] Executed DbCommand (414ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:37:16.146 -03:00 [INF] Executed DbCommand (205ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:37:16.176 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:37:16.186 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:37:16.193 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 762.7435ms
+2025-07-31 16:37:16.267 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:37:16.296 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 882.4552ms
+2025-07-31 16:37:16.407 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1736.7058ms
+2025-07-31 16:37:16.420 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:37:16.448 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 499 null application/json; charset=utf-8 6328.8829ms
+2025-07-31 16:37:18.436 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:37:18.882 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:37:18.888 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:37:18.896 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:37:18.939 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:37:18.984 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:37:18.994 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 85.2095ms
+2025-07-31 16:37:19.132 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:37:19.161 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 724.8115ms
+2025-07-31 16:38:21.547 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:38:21.590 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:38:21.594 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:38:21.601 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:38:21.659 -03:00 [INF] Executed DbCommand (42ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:38:21.844 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:38:21.850 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 240.3146ms
+2025-07-31 16:38:21.856 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:38:21.863 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 316.2362ms
+2025-07-31 16:40:02.296 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:40:02.877 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:40:02.890 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:40:02.906 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:40:03.609 -03:00 [INF] Executed DbCommand (611ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:40:04.095 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:40:04.435 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:40:04.450 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:40:04.457 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 1505.8542ms
+2025-07-31 16:40:04.461 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:40:04.472 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:40:04.479 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:40:04.488 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 2193.1774ms
+2025-07-31 16:40:04.643 -03:00 [INF] Executed DbCommand (138ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:40:04.706 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:40:04.731 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 229.7937ms
+2025-07-31 16:40:04.758 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:40:04.781 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 686.5753ms
+2025-07-31 16:40:05.950 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:40:06.112 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:40:06.171 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:40:06.176 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:40:06.226 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:40:06.236 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:40:06.275 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 90.3571ms
+2025-07-31 16:40:06.297 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:40:06.304 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 353.8124ms
+2025-07-31 16:42:42.914 -03:00 [INF] User profile is available. Using 'C:\Users\Mondrya Lawennd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-31 16:42:46.394 -03:00 [INF] Now listening on: https://localhost:7084
+2025-07-31 16:42:48.631 -03:00 [INF] Now listening on: http://localhost:5078
+2025-07-31 16:42:48.962 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-31 16:42:49.056 -03:00 [INF] Hosting environment: Development
+2025-07-31 16:42:49.146 -03:00 [INF] Content root path: C:\Temp\repos\LaporteAPI\LaporteAPI\LaporteAPI
+2025-07-31 16:42:50.605 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - null null
+2025-07-31 16:43:00.853 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - 200 null text/html;charset=utf-8 10480.1974ms
+2025-07-31 16:43:07.448 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-31 16:43:07.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 134.4332ms
+2025-07-31 16:43:13.114 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - null null
+2025-07-31 16:43:14.506 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1391.2908ms
+2025-07-31 16:43:47.730 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:43:47.792 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:43:48.166 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:43:48.167 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:43:48.332 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:43:48.388 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:43:48.538 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:43:48.546 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:44:06.306 -03:00 [INF] Executed DbCommand (1,891ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:44:06.308 -03:00 [INF] Executed DbCommand (2,005ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:44:07.037 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:44:07.037 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:44:07.692 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 18629.5137ms
+2025-07-31 16:44:09.250 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - null null
+2025-07-31 16:44:10.593 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 21809.2523ms
+2025-07-31 16:44:11.424 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:44:11.448 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:44:11.496 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 23704.9999ms
+2025-07-31 16:44:11.496 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 23767.4225ms
+2025-07-31 16:44:12.557 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3307.0664ms
+2025-07-31 16:44:18.248 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:44:19.284 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:44:19.433 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:44:19.449 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:44:20.187 -03:00 [INF] Executed DbCommand (224ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:44:20.690 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:44:20.757 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 1252.6806ms
+2025-07-31 16:44:20.851 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:44:20.876 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 2629.3218ms
+2025-07-31 16:46:12.444 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - null null
+2025-07-31 16:46:12.509 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:46:12.519 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - 204 null null 75.7801ms
+2025-07-31 16:46:12.531 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - application/json 260
+2025-07-31 16:46:12.552 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:46:12.557 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:46:12.583 -03:00 [INF] Route matched with {action = "CadastrarFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadastrarFuncionario(LaporteAPI.Domain.Model.FuncionarioDTO) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:46:12.775 -03:00 [INF] Requisição para obter todos os funcionários iniciada.
+2025-07-31 16:46:13.415 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-31 16:46:13.460 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI) in 858.6133ms
+2025-07-31 16:46:13.868 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:46:13.967 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - 400 null application/json; charset=utf-8 1435.5233ms
+2025-07-31 16:46:18.885 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - null null
+2025-07-31 16:46:18.929 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:46:18.942 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/CadastrarFuncionario - 204 null null 56.6968ms
+2025-07-31 16:46:18.954 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - application/json 260
+2025-07-31 16:46:18.999 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:46:19.007 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:46:19.023 -03:00 [INF] Route matched with {action = "CadastrarFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadastrarFuncionario(LaporteAPI.Domain.Model.FuncionarioDTO) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:46:19.068 -03:00 [INF] Requisição para obter todos os funcionários iniciada.
+2025-07-31 16:46:19.397 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-31 16:46:19.415 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI) in 353.3631ms
+2025-07-31 16:46:19.428 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.CadastrarFuncionario (LaporteAPI)'
+2025-07-31 16:46:19.443 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7084/api/Funcionario/CadastrarFuncionario - 400 null application/json; charset=utf-8 497.4301ms
+2025-07-31 16:47:49.202 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:47:49.524 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:47:49.542 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:47:49.591 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:47:50.078 -03:00 [INF] Executed DbCommand (240ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:47:50.241 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:47:50.255 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 431.6597ms
+2025-07-31 16:47:50.269 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:47:50.278 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1146.047ms
+2025-07-31 16:50:46.535 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:50:47.306 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:50:48.015 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:50:48.048 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:50:48.053 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:50:48.058 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:50:48.064 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:50:48.070 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:50:48.336 -03:00 [INF] Executed DbCommand (220ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:50:48.449 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:50:48.456 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 352.1914ms
+2025-07-31 16:50:48.463 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:50:48.468 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 1967.8228ms
+2025-07-31 16:50:48.921 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:50:49.540 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:50:49.664 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 1229.6069ms
+2025-07-31 16:50:49.671 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:50:49.678 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 2372.925ms
+2025-07-31 16:50:51.924 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - null null
+2025-07-31 16:50:52.106 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:50:52.121 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:50:52.149 -03:00 [INF] Route matched with {action = "GetFuncionarioPorId", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFuncionarioPorId(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:50:52.243 -03:00 [INF] Executed DbCommand (72ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:50:52.366 -03:00 [INF] Executing OkObjectResult, writing value of type 'LaporteAPI.Domain.Entities.Funcionario'.
+2025-07-31 16:50:52.373 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI) in 213.0181ms
+2025-07-31 16:50:52.381 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetFuncionarioPorId (LaporteAPI)'
+2025-07-31 16:50:52.407 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetFuncionarioPorId/3 - 200 null application/json; charset=utf-8 483.4697ms
+2025-07-31 16:51:01.464 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/DeleteFuncionario/3 - null null
+2025-07-31 16:51:01.568 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:51:01.611 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7084/api/Funcionario/DeleteFuncionario/3 - 204 null null 146.2323ms
+2025-07-31 16:51:01.668 -03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7084/api/Funcionario/DeleteFuncionario/3 - null null
+2025-07-31 16:51:01.716 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:51:01.723 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.DeleteFuncionario (LaporteAPI)'
+2025-07-31 16:51:01.768 -03:00 [INF] Route matched with {action = "DeleteFuncionario", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFuncionario(Int32) on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:51:10.522 -03:00 [INF] Executed DbCommand (163ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+WHERE [f].[Id] = @__p_0
+2025-07-31 16:51:12.547 -03:00 [INF] Executed DbCommand (898ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Funcionario]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-07-31 16:51:14.016 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-07-31 16:51:14.437 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.DeleteFuncionario (LaporteAPI) in 12358.8425ms
+2025-07-31 16:51:15.065 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.DeleteFuncionario (LaporteAPI)'
+2025-07-31 16:51:15.185 -03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7084/api/Funcionario/DeleteFuncionario/3 - 204 null null 13517.3595ms
+2025-07-31 16:51:17.062 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - null null
+2025-07-31 16:51:17.475 -03:00 [INF] CORS policy execution successful.
+2025-07-31 16:51:17.486 -03:00 [INF] Executing endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:51:17.516 -03:00 [INF] Route matched with {action = "GetAllFuncionarios", controller = "Funcionario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllFuncionarios() on controller LaporteAPI.Controllers.FuncionarioController (LaporteAPI).
+2025-07-31 16:51:18.176 -03:00 [INF] Executed DbCommand (411ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CPF], [f].[CargoId], [f].[DataNascimento], [f].[Email], [f].[Nome], [f].[NomeGerente], [f].[Senha], [f].[Sobrenome], [f].[UsuarioId]
+FROM [Funcionario] AS [f]
+2025-07-31 16:51:18.317 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LaporteAPI.Domain.Entities.Funcionario, LaporteAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-31 16:51:18.529 -03:00 [INF] Executed action LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI) in 778.6786ms
+2025-07-31 16:51:18.548 -03:00 [INF] Executed endpoint 'LaporteAPI.Controllers.FuncionarioController.GetAllFuncionarios (LaporteAPI)'
+2025-07-31 16:51:18.555 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7084/api/Funcionario/GetAllFuncionarios - 200 null application/json; charset=utf-8 1493.4318ms
